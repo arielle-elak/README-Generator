@@ -75,12 +75,12 @@ const generateREADME = ({ licenseTitle, licenseBadge, licenseURL, title, descrip
 ## CONTENTS OF THIS FILE
 ---------------------
 
-* Description
-* Installation
-* Usage
-* Contributing
-* Tests
-* License
+* [Description](#description)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [License](#license)
 
 ## Description
 ${description}
