@@ -68,10 +68,40 @@ const promptUser = () => {
 };
 
 // TODO: Create a function to write README file
-const generateREADME = ({ title }) =>
-    ` # ${title}
-    Here is the content of the README
-    `;
+const generateREADME = ({ licenseTitle, licenseBadge, licenseURL, title, description, installation, usage, contribution, test }) =>
+` # ${title}
+[![License](${licenseBadge})](${licenseURL})
+
+## CONTENTS OF THIS FILE
+---------------------
+
+* Description
+* Installation
+* Usage
+* Contributing
+* Tests
+* License
+
+## Description
+${description}
+
+## Installation
+${installation}
+
+## Usage
+${usage}
+
+## Contributing
+${contribution}
+
+## Tests
+${test}
+
+## License
+${licenseTitle}
+${licenseURL}
+
+`;
 
 // DONE: Create a function to initialize app
 const init = () => {
