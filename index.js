@@ -1,6 +1,5 @@
 // DONE: Include packages needed for this application
 const inquirer = require('inquirer');
-const generateMarkdown = require('./utils/generateMarkdown');
 const fs = require('fs');
 
 // TODO: Create a function to write README file
@@ -77,6 +76,9 @@ function init() {
             fs.writeFile(filename, JSON.stringify(data, null, '\t'), (err) =>
             err ? console.log(err) : console.log('Success!')
             );
+            console.log(`License to pass: ${data.license}`)
+            var license = `${ data.license }`;
+            generateMarkdown(license);
         });
 };
 

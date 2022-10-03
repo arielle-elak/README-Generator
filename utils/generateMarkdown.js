@@ -1,3 +1,5 @@
+
+
 // Licenses array with name, image url, license url
 const licenses = [
   {
@@ -60,8 +62,7 @@ const licenses = [
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-
-
+  return licenses.find(badgeImg => match.licenseName.includes(license));
 }
 
 // TODO: Create a function that returns the license link
