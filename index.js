@@ -43,7 +43,7 @@ function init() {
             },
             {
                 type: 'list',
-                message: 'License options:',
+                message: 'Select a Licence.\n Not sure which one to use? \nVisit https://choosealicense.com/ for assistance.',
                 choices: [
                     'Apache License 2.0',
                     'GNU General Public License v3.0',
@@ -54,7 +54,6 @@ function init() {
                     'Creative Commons Zero v1.0 Universal',
                     'Eclipse Public License 2.0',
                     'GNU Affero General Public License v3.0',
-                    'GNU Lesser General Public License v2.1',
                     'Mozilla Public License 2.0',
                     'The Unlicense'
                 ],
