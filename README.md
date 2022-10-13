@@ -21,6 +21,11 @@ Since this project is not deployed, once you have copied the repo, you will need
 ## Usage
 Please see the video below for a demonstration of the functionality of this app:
 
+[Video Link in Google Drive](https://drive.google.com/file/d/1yW1D-h5BI5zDHw22VHBSMcxuIVcOsoTZ/view)
+
+![README_Generator_arielle-elak](https://user-images.githubusercontent.com/73449635/195506150-a59d400e-6490-4ce4-b55c-8fecd05001cc.gif)
+
+
 ## Contributing
 You are welcome to contribute if you wish! Please feel free to contact me using the information in the Questions and Contact section.
 
