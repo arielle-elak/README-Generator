@@ -67,14 +67,14 @@ function writeREADME(file, data) {
   return fs.writeFileSync(file, data);
 }
 
-// Function call to initialize app
+// Create function to initialize the app and start asking questions, then write the file
+// Using rest function to cycle through all answers as data set instead of declaring them implicitly
 function init() {
   inquirer.prompt(prompts)
     .then((answers) => {
+      writeREADME('./generated-readme/README.md', generateMarkdown({ ...answers }));
+    });
+};
 
-  })
-}
-
-
-
+// Function call to initialize app
 init();
