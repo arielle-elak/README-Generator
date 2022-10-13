@@ -34,6 +34,7 @@ This GitHub repository utilizes the ${license} License.`;
 function generateMarkdown(data) {
 
   return `# ${data.title}
+by ${data.username}
 
 ${renderLicenseBadge(data.license)}
 
