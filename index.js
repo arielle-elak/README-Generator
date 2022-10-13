@@ -62,7 +62,7 @@ const prompts = [
 ];
 
 
-// TODO: Create a function to write README file
+// DONE: Create a function to write README file
 function writeREADME(file, data) {
   return fs.writeFileSync(file, data);
 }
@@ -73,6 +73,7 @@ function init() {
   inquirer.prompt(prompts)
     .then((answers) => {
       writeREADME('./generated-readme/README.md', generateMarkdown({ ...answers }));
+      console.log("Your README file is ready in the generated-readme folder!");
     });
 };
 

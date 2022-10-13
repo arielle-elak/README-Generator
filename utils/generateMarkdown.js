@@ -1,11 +1,12 @@
 // DONE: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
+// If there are spaces in the license title, replace them with underscores for proper URL format
 function renderLicenseBadge(license) {
   if (!license) {
     return '';
   }
   let licenseURL = license.replace(' ','_')
-  console.log('Licence Used: '+licenseURL);
+  // console.log('Licence Used: '+licenseURL);
   return `![License](https://img.shields.io/badge/License-`+licenseURL+`-blue.svg)`;
 }
 
