@@ -8,7 +8,7 @@ const generateMarkdown = require('./utils/generateMarkdown');
 const prompts = [
   {
     type: 'input',
-    message: 'Project title:',
+    message: 'Your project title:',
     name: 'title'
   },
   {
@@ -23,22 +23,22 @@ const prompts = [
   },
   {
     type: 'input',
-    message: 'Usage information:',
+    message: 'What is the intended use and flow of your project?',
     name: 'usage'
   },
   {
     type: 'input',
-    message: 'Contribution guidelines:',
+    message: 'How can others contribute to your project?',
     name: 'contribution'
   },
   {
     type: 'input',
-    message: 'Test instructions:',
+    message: 'How to initiate a test of your project:',
     name: 'test'
   },
   {
     type: 'list',
-    message: 'Select a Licence.\n Not sure which one to use? \nVisit https://choosealicense.com/ for assistance.',
+    message: 'Select a license.\n Not sure which one to use? \nVisit https://choosealicense.com/ for assistance.',
     choices: [
       'Apache 2.0',
       'AGPL',
@@ -51,12 +51,12 @@ const prompts = [
   },
   {
     type: 'input',
-    message: 'Github username:',
+    message: 'What is your github username?',
     name: 'username'
   },
   {
     type: 'input',
-    message: 'Email address:',
+    message: 'What email address can users send questions to?',
     name: 'email'
   }
 ];

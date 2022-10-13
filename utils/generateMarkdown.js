@@ -26,7 +26,7 @@ function renderLicenseSection(license) {
     return '';
   }
   return `## License \n
-  This GitHub repository utilizes the ${license} License.`;
+This GitHub repository utilizes the ${license} License.`;
 }
 
 // DONE: Create a function to generate markdown for README
@@ -37,17 +37,17 @@ function generateMarkdown(data) {
 
 ${renderLicenseBadge(data.license)}
 
+## Description
+${data.description}
+
 ## Table of Contents
 
-* [Description](#description)
 * [Installation](#installation)
 * [Usage](#usage)
 * [Contributing](#contributing)
 * [Tests](#tests)
 * ${renderLicenseLink(data.license)}
-
-## Description
-${data.description}
+* [Questions and Contact](#questions_and_contact)
 
 ## Installation
 ${data.installation}
@@ -62,6 +62,9 @@ ${data.contribution}
 ${data.test}
 
 ${renderLicenseSection(data.license)}
+
+## Questions and Contact
+Have questions about this project? You can email me directly at [${data.email}](mailto:${data.email}).
 
 `;
 }
