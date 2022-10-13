@@ -1,10 +1,10 @@
-# My Project!
+# README Generator
 by arielle-elak
 
 ![License](https://img.shields.io/badge/License-Unlicense-blue.svg)
 
 ## Description
-This is a cool project. I hope folks will like it!
+For this project, we were to create a user-friendly app for generating a professional README file to accompany any GitHub project. When writing a README such as this one, it can be difficult to figure out how to present a project and ensure all the appropriate information is included. This README, in fact, was created using this tool! No more multiple commits to create a nicely-formatted README file.
 
 ## Table of Contents
 
@@ -16,21 +16,21 @@ This is a cool project. I hope folks will like it!
 * [Questions and Contact](#questions_and_contact)
 
 ## Installation
-npm i
+Since this project is not deployed, once you have copied the repo, you will need to use the command "npm i" in your bash terminal. The node_modules folder has been added to the .gitignore file for simplicity.
 
 ## Usage
-First people will open the app, then they will use the app, then hopefully they will like it.
+Please see the video below for a demonstration of the functionality of this app:
 
 ## Contributing
-Send me an email! Details are below.
+You are welcome to contribute if you wish! Please feel free to contact me using the information in the Questions and Contact section.
 
 ## Tests
-npm test
+There are no tests for this project. Should you create tests of your own, you may use "npm test" to initiate them.
 
 ## License 
 
 This GitHub repository utilizes the Unlicense License.
 
 ## Questions and Contact
-Have questions about this project? You can email me directly at [email.blarghhhh@gmail.com](mailto:email.blarghhhh@gmail.com).
+Have questions about this project? You can email me directly at [arielle.elak@gmail.com](mailto:arielle.elak@gmail.com).
 
