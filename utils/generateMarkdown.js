@@ -4,7 +4,9 @@ function renderLicenseBadge(license) {
   if (!license) {
     return '';
   }
-  return `![License](https://img.shields.io/badge/License-${license}-blue.svg)`;
+  let licenseURL = license.replace(' ','_')
+  console.log('Licence Used: '+licenseURL);
+  return `![License](https://img.shields.io/badge/License-`+licenseURL+`-blue.svg)`;
 }
 
 // DONE: Create a function that returns the license link (to the section link within the HTML document)
