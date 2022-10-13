@@ -22,18 +22,18 @@ function renderLicenseSection(license) {
   if (!license) {
     return '';
   }
-  return `## License
+  return `## License \n
   This GitHub repository utilizes the ${license} License.`;
 }
 
-// TODO: Create a function to generate markdown for README
+// DONE: Create a function to generate markdown for README
 
-const generateMarkdown = ({ title, description, installation, usage, contribution, test, license }) =>
+function generateMarkdown (data) {
 
   `
-${renderLicenseBadge(license)}
+${renderLicenseBadge(data.license)}
 
-# ${title}
+# ${data.title}
 
 
 ## Table of Contents
@@ -43,26 +43,24 @@ ${renderLicenseBadge(license)}
 * [Usage](#usage)
 * [Contributing](#contributing)
 * [Tests](#tests)
-* ${renderLicenseLink(license)}
+* ${renderLicenseLink(data.license)}
 
 ## Description
-${description}
+${data.description}
 
 ## Installation
-${installation}
+${data.installation}
 
 ## Usage
-${usage}
+${data.usage}
 
 ## Contributing
-${contribution}
+${data.contribution}
 
 ## Tests
-${test}
+${data.test}
 
-## License
-${licenseTitle}
-${licenseURL}
+${renderLicenseSection(data.license)}
 
 `;
 }

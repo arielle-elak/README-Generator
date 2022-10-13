@@ -2,7 +2,7 @@
 const inquirer = require('inquirer');
 // DONE: Create a function to write README file
 const { writeFile } = require('fs').promises;
-var generateMarkdown = require('./utils/generateMarkdown')
+const generateMarkdown = require('./utils/generateMarkdown')
 
 
 // Ask questions and then use data input to create html file
@@ -66,16 +66,11 @@ const promptUser = () => {
 
 
 
-
-
-
-
-
 // DONE: Create a function to initialize app
-const init = () => {
+function init () {
     promptUser()
         // Use writeFile method imported from fs.promises to use promises instead of a callback function
-        .then((answers) => writeFile('./generated-readme/README.md', generatemarkdown(answers)))
+        .then((answers) => writeFile('./generated-readme/README.md', generateMarkdown(answers)))
         .then(() => console.log('Successfully wrote to new README file'))
         .catch((err) => console.error(err));
 };
